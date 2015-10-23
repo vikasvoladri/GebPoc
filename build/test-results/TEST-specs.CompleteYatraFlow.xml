@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="specs.CompleteYatraFlow" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-10-21T09:29:44" hostname="PRINHYLTPHP0513" time="125.242">
+  <properties/>
+  <testcase name="Login to yatra with valid credentials" classname="specs.CompleteYatraFlow" time="44.999"/>
+  <testcase name="Search for flights by selecting all valid options" classname="specs.CompleteYatraFlow" time="32.294"/>
+  <testcase name="Sort Available Flights based on Price" classname="specs.CompleteYatraFlow" time="12.017"/>
+  <testcase name="Select any flight from available flights" classname="specs.CompleteYatraFlow" time="27.641"/>
+  <testcase name="Book flight by going thorough 3 steps defined" classname="specs.CompleteYatraFlow" time="8.291"/>
+  <system-out><![CDATA[Exception message:condition did not pass in 2.0 seconds (failed with exception)
+text value:HYDBLR
+text value:BLRHYD
+text value:Thu,29Oct
+text value:Mon,2Nov
+size of airlines:16
+iteration done
+size of stop overs:16
+iteration done
+selection city info:HYDBLR
+selection city info:BLRHYD
+book tickets values:[HYD 06:10, BLR 07:15]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="specs.Testing1" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-10-21T09:31:49" hostname="PRINHYLTPHP0513" time="0.001">
+  <properties/>
+  <testcase name="Login1 testing" classname="specs.Testing1" time="0.0"/>
+  <testcase name="Test Login3 " classname="specs.Testing1" time="0.001"/>
+  <testcase name="a login2" classname="specs.Testing1" time="0.0"/>
+  <system-out><![CDATA[Login1
+Login3
+Login2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

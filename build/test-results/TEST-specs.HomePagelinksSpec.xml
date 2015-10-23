@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="specs.HomePagelinksSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-10-15T10:55:30" hostname="PRINHYLTPHP0513" time="30.114">
+  <properties/>
+  <testcase name="verify All home page links" classname="specs.HomePagelinksSpec" time="30.114"/>
+  <system-out><![CDATA[at method of home page!Entered cross browser click method!]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
