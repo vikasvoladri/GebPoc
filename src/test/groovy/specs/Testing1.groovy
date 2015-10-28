@@ -24,5 +24,7 @@ class Testing1 extends Specification{
         given:
         println("Login2")
 
+        print("git test")
+
     }
 }
