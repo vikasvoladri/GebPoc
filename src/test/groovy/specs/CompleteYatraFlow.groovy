@@ -5,6 +5,7 @@ import pages.BookYourFlightPage
 import pages.HomePage
 import pages.LoginPage
 import pages.SearchFlightsPage
+import spock.lang.IgnoreRest
 import spock.lang.Shared
 import spock.lang.Stepwise
 
@@ -24,7 +25,7 @@ class CompleteYatraFlow extends GebReportingSpec{
     @Shared String sDepartureFlightName
     @Shared String sArrivalFlightName
 
-
+    //@IgnoreRest
     def "Login to yatra with valid credentials"(){
         given: "Navigating to yatra site and verifying that home page is displayed"
         to HomePage

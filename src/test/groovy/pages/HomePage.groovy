@@ -3,6 +3,7 @@ package pages
 import geb.Page
 import geb.waiting.WaitTimeoutException
 import modules.HomePageModule
+import org.openqa.selenium.interactions.Actions
 
 /**
  * Created by vikasv on 10/15/2015.
@@ -26,6 +27,10 @@ class HomePage extends Page{
             //waitFor("mediumwait"){homePageModule.loginLink.displayed}
             click homePageModule.loginLink
         }
+
+        /*def actions = new Actions(driver)
+        actions.moveToElement(homePageModule.myAccountLink.firstElement()).build().perform();
+        homePageModule.loginLink.click();*/
     }
 
     def verifyLoggedInUserName(String sExpectedUserName){

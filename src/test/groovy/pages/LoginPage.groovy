@@ -3,6 +3,7 @@ package pages
 import geb.Page
 import modules.LoginPageModule
 
+
 /**
  * Created by vikasv on 10/15/2015.
  */
@@ -21,7 +22,8 @@ class LoginPage extends Page{
     def logInToYatraWithValidCredentials(String sUsername, String sPassword){
         loginPageModule.emailAddressField.value(sUsername)
         loginPageModule.passwordField << sPassword
-        loginPageModule.signInBtn.click()
+        //loginPageModule.signInBtn.click()
+        browser.js.exec(loginPageModule.signInBtn.firstElement(),"arguments[0].click();");
     }
 
 

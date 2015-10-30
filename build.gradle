@@ -7,6 +7,10 @@ repositories {
     mavenCentral()
 }
 
+ext{
+    drivers = ["firefox","chrome"]
+}
+
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.3.11'
     testCompile group: 'junit', name: 'junit', version: '4.11'
@@ -19,3 +23,12 @@ dependencies {
         exclude group: "org.codehaus.groovy"
     }
 }
+
+drivers.each{driver ->
+    task "${driver}"(type: Test){
+        systemProperty "geb.env", driver
+    }
+}
+
+
+

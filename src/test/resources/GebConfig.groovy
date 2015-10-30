@@ -2,6 +2,8 @@
  * Created by vikasv on 10/8/2015.
  */
 
+
+import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.firefox.FirefoxDriver
 
 waiting {
@@ -30,6 +32,28 @@ driver = {
     ff.manage().window().maximize()
     ff.manage().deleteAllCookies()
     return ff
+}
+
+environments {
+
+    firefox {
+        driver = {
+            def ff = new FirefoxDriver()
+            ff.manage().window().maximize()
+            ff.manage().deleteAllCookies()
+            return ff
+        }
+    }
+
+    chrome {
+        driver = {
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +System.getProperty("file.separator")+"ChromeDriver"+System.getProperty("file.separator")+ "chromedriver.exe");
+            def ch = new ChromeDriver()
+            ch.manage().window().maximize()
+            ch.manage().deleteAllCookies()
+            return ch
+        }
+    }
 }
 
 baseUrl = "http://www.yatra.com/"
